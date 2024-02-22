@@ -11,46 +11,43 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-row  pt-28">
-      <div className=" w-1/2  pl-28  text-base ">
-        <main className="flex flex-col">
+    <div className="flex flex-col sm:flex-row pt-28 lg:px-28">
+      <div className="w-full sm:w-1/2 px-4 sm:px-0">
+        <main className="flex flex-col px-28">
           <a
             onClick={() => showContent("content3")}
-            className=" hover:text-black cursor-default"
+            className="hover:text-black cursor-pointer"
           >
             Tomine Berge
           </a>
-          <h1 className=" text-neutral-400"> Software Designer </h1> <br />
+          <h1 className="text-neutral-400">Software Designer</h1> <br />
         </main>
-        <div className="text-neutral-400 flex flex-col">
+        <div className="text-neutral-400 flex flex-col px-28">
           <span
             onClick={() => showContent("content1")}
-            className=" hover:text-black cursor-default"
+            className="hover:text-black cursor-pointer"
           >
             About
           </span>
           <a
             href="https://www.linkedin.com/in/tomine-berge/"
-            className=" hover:text-black cursor-default"
+            className="hover:text-black cursor-pointer"
           >
-            {" "}
-            Linkedin{" "}
+            Linkedin
           </a>
           <a
             href="https://github.com/tomineb"
-            className=" hover:text-black cursor-default"
+            className="hover:text-black cursor-pointer"
           >
-            {" "}
-            Github{" "}
+            Github
           </a>
-          {/* <a href="" className=" hover:text-black cursor-default"> Medium (?)</a> */}
         </div>
       </div>
-      <div className=" w-3/4 pl-1/4 ">
+      <div className="w-full sm:w-1/2 px-28">
         {selectedContent ? (
           <div
             id={selectedContent}
-            className="m:px-0 flex-row justify-end  sm:pt-10 w-1/2 text-neutral-800 text-sm"
+            className="px-4 sm:px-0 pt-10 text-neutral-800 text-sm"
           >
             {selectedContent === "content1" && <Me />}
             {selectedContent === "content3" && (
@@ -74,6 +71,7 @@ const About: React.FC = () => {
                 alt={`Tomine`}
                 width="240"
                 height="38"
+                className="w-auto sm:w-1/2"
               />
             </figure>
           </div>

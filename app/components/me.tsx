@@ -2,7 +2,7 @@ import React from "react";
 
 const Me = () => {
   return (
-    <div className=" flex flex-row justify-evenly text-sm">
+    <div className=" flex flex-row  text-sm w-full sm:w-1/2  lg:w-2/3 sm:px-0">
       <div>
         <p>Hi!</p>
         <br />
@@ -15,15 +15,15 @@ const Me = () => {
         <br />
         <p>
           {" "}
-          I work part time as a fullstack developer for the company Electronic
-          Chart Centre. My role mainly consists of development with React, Vue
-          and Java. I also do web - and interface design.
+          I work as a fullstack developer for the company Electronic Chart
+          Centre. I work with maps, and also do web - and interface design. My
+          role mainly consists of development with React, Vue and Java.
         </p>{" "}
         <br />
         <p>
           {" "}
-          I am interested in all things visual, and currently I am exploring the
-          different instances of the Adobe Creative Cloud and Blender.
+          Previous experience include copywriting, journalism and visual
+          identity creation. In my free time I like to draw and run.
         </p>{" "}
         <br />
       </div>
