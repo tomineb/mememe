@@ -3,7 +3,7 @@ import ClockWrapper from "./clock"
 
 export default function Nav() {
     return(
-        <div className=" flex font-sans justify-end  mr-1 p-1">
+        <div className="flex font-sans justify-end mr-1 p-1">
             <ClockWrapper />
         </div>
     )
